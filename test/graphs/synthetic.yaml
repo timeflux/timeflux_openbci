@@ -1,0 +1,15 @@
+graphs:
+  - id: OpenBCI
+    nodes:
+    - id: acquire
+      module: timeflux_openbci.nodes.driver
+      class: OpenBCI
+      params:
+        board: synthetic
+    - id: display
+      module: timeflux.nodes.debug
+      class: Display
+    edges:
+    - source: acquire
+      target: display
+    rate: 10
