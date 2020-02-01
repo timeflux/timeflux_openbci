@@ -1,5 +1,4 @@
 import pandas as pd
-from time import time
 from brainflow.board_shim import BoardIds, BoardShim, BrainFlowInputParams
 from timeflux.core.node import Node
 
@@ -72,7 +71,6 @@ class OpenBCI(Node):
             self._channels[channel] = f'analog_{index}'
         for index, channel in enumerate(other_channels, start=1):
             self._channels[channel] = f'other_{index}'
-        print(self._channels)
 
         # Set private variables
         self._timestamp_channel = timestamp_channel
