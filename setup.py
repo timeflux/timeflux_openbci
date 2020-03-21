@@ -11,6 +11,7 @@ with open('timeflux_openbci/__init__.py') as f:
 
 DEPENDENCIES = [
     'brainflow',
+    'timeflux-brainflow @ git+https://github.com/timeflux/timeflux_brainflow',
     'timeflux @ git+https://github.com/timeflux/timeflux'
 ]
 
