@@ -21,6 +21,6 @@ class OpenBCI(BrainFlow):
             ``ip_port``, ``ip_protocol``.
 
     Example:
-        .. literalinclude:: /../../timeflux_openbci/test/graphs/synthetic.yaml
+        .. literalinclude:: /../../timeflux_openbci/examples/synthetic.yaml
            :language: yaml
     """
