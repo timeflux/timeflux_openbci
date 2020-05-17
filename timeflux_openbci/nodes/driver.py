@@ -1,5 +1,6 @@
 from timeflux_brainflow.nodes.driver import BrainFlow
 
+
 class OpenBCI(BrainFlow):
 
     """OpenBCI driver.
@@ -21,6 +22,6 @@ class OpenBCI(BrainFlow):
             ``ip_port``, ``ip_protocol``.
 
     Example:
-        .. literalinclude:: /../../timeflux_openbci/examples/synthetic.yaml
+        .. literalinclude:: /../examples/synthetic.yaml
            :language: yaml
     """
