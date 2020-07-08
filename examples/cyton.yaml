@@ -14,8 +14,10 @@ graphs:
       params:
         board: cyton
         serial_port: /dev/cu.usbserial-DQ0084BO
-        channels: [ Fpz, AF7, AF8, Oz, O1, O2, P7, P8 ]
-        debug: false
+        channels: [ Fpz, AF7, AF8, Oz, O1, O2, P7, P8 ] # Rename EEG channels
+        disable: [ 2 ] # Disable channel 2
+        gain: 8
+        debug: true
     - id: display
       module: timeflux.nodes.debug
       class: Display
