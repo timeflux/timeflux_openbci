@@ -38,7 +38,7 @@ class OpenBCI(BrainFlow):
         # Prepare command
         command = None
         if board.startswith("cyton"):
-            gains = {1: 0, 2: 1, 4: 2, 6: 3, 8: 4, 12: 5, 6: 24}
+            gains = {1: 0, 2: 1, 4: 2, 6: 3, 8: 4, 12: 5, 24: 6}
             if "daisy" in board:
                 chans = "12345678QWERTYUI"
             else:
